@@ -1,7 +1,7 @@
 #include <stdio.h>
-//#include <conio.h>
+//#include<conio.h>
 
-int main(void)
+int main(void) 
 {
 	int m,rem,rev=0;
 	//printf("enter the number:");
@@ -19,6 +19,7 @@ int main(void)
 		printf("%d ",rem);
 		m=m/10;
 	}
- // getch();
+  //getch();
 	return 0;
+
 }
