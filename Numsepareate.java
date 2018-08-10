@@ -1,23 +1,24 @@
-/* package whatever; // don't place package name! */
+#include <stdio.h>
+//#include <conio.h>
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-
-/* Name of the class has to be "Main" only if the class is public. */
-class Numsepareate
+int main(void)
 {
-	public static void main (String[] args) throws java.lang.Exception
+	int m,rem,rev=0;
+	//printf("enter the number:");
+	scanf("%d",&m);
+	while(m!=0)
 	{
-		// your code goes here
-		Scanner sc=new Scanner(System.in);
-		char[] a=sc.next().toCharArray();
-		//s=sc.nextLine();
-		for(int i=0;i<a.length;i++) 
-		{
-			System.out.print(a[i]+" ");
-     	}
-		
-		
+		rem=m%10;
+		rev=(rev*10)+rem;
+		m=m/10;
 	}
+	m=rev;
+	while(m!=0)
+	{
+		rem=m%10;
+		printf("%d ",rem);
+		m=m/10;
+	}
+ // getch();
+	return 0;
 }
